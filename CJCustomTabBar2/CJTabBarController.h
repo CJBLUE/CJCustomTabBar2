@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TabBarController.h
 //  CJCustomTabBar2
 //
 //  Created by zxjk on 17/8/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface CJTabBarController : UITabBarController
 
 @end
-

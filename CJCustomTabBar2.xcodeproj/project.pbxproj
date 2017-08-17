@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		DA3887181F4135010032F51C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3887171F4135010032F51C /* main.m */; };
 		DA38871B1F4135010032F51C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA38871A1F4135010032F51C /* AppDelegate.m */; };
-		DA38871E1F4135010032F51C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA38871D1F4135010032F51C /* ViewController.m */; };
 		DA3887211F4135010032F51C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA38871F1F4135010032F51C /* Main.storyboard */; };
 		DA3887231F4135010032F51C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3887221F4135010032F51C /* Assets.xcassets */; };
 		DA3887261F4135010032F51C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3887241F4135010032F51C /* LaunchScreen.storyboard */; };
 		DA3887311F4135020032F51C /* CJCustomTabBar2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3887301F4135020032F51C /* CJCustomTabBar2Tests.m */; };
 		DA38873C1F4135020032F51C /* CJCustomTabBar2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA38873B1F4135020032F51C /* CJCustomTabBar2UITests.m */; };
+		DA38874B1F4135260032F51C /* CJTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA38874A1F4135260032F51C /* CJTabBarView.m */; };
+		DA38874E1F41390E0032F51C /* CJCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DA38874D1F41390E0032F51C /* CJCustomTabBar.m */; };
+		DA3887511F413A100032F51C /* CJTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3887501F413A100032F51C /* CJTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +41,6 @@
 		DA3887171F4135010032F51C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DA3887191F4135010032F51C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DA38871A1F4135010032F51C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DA38871C1F4135010032F51C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DA38871D1F4135010032F51C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DA3887201F4135010032F51C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA3887221F4135010032F51C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA3887251F4135010032F51C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +51,12 @@
 		DA3887371F4135020032F51C /* CJCustomTabBar2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CJCustomTabBar2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA38873B1F4135020032F51C /* CJCustomTabBar2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJCustomTabBar2UITests.m; sourceTree = "<group>"; };
 		DA38873D1F4135020032F51C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA3887491F4135260032F51C /* CJTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJTabBarView.h; sourceTree = "<group>"; };
+		DA38874A1F4135260032F51C /* CJTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJTabBarView.m; sourceTree = "<group>"; };
+		DA38874C1F41390E0032F51C /* CJCustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CJCustomTabBar.h; sourceTree = "<group>"; };
+		DA38874D1F41390E0032F51C /* CJCustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJCustomTabBar.m; sourceTree = "<group>"; };
+		DA38874F1F413A100032F51C /* CJTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJTabBarController.h; sourceTree = "<group>"; };
+		DA3887501F413A100032F51C /* CJTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +109,12 @@
 			children = (
 				DA3887191F4135010032F51C /* AppDelegate.h */,
 				DA38871A1F4135010032F51C /* AppDelegate.m */,
-				DA38871C1F4135010032F51C /* ViewController.h */,
-				DA38871D1F4135010032F51C /* ViewController.m */,
+				DA3887491F4135260032F51C /* CJTabBarView.h */,
+				DA38874A1F4135260032F51C /* CJTabBarView.m */,
+				DA38874C1F41390E0032F51C /* CJCustomTabBar.h */,
+				DA38874D1F41390E0032F51C /* CJCustomTabBar.m */,
+				DA38874F1F413A100032F51C /* CJTabBarController.h */,
+				DA3887501F413A100032F51C /* CJTabBarController.m */,
 				DA38871F1F4135010032F51C /* Main.storyboard */,
 				DA3887221F4135010032F51C /* Assets.xcassets */,
 				DA3887241F4135010032F51C /* LaunchScreen.storyboard */,
@@ -273,7 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA38871E1F4135010032F51C /* ViewController.m in Sources */,
+				DA38874E1F41390E0032F51C /* CJCustomTabBar.m in Sources */,
+				DA38874B1F4135260032F51C /* CJTabBarView.m in Sources */,
+				DA3887511F413A100032F51C /* CJTabBarController.m in Sources */,
 				DA38871B1F4135010032F51C /* AppDelegate.m in Sources */,
 				DA3887181F4135010032F51C /* main.m in Sources */,
 			);
